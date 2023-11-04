@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Class Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Data Driven Test(failed)">
+    <classes>
+      <class name="testNGbasics.DataDrivenFromDifferentClass">
+        <methods>
+          <include name="negativeSignInFunctionalityTestHittingEnterKey" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+          <include name="backToHomePage"/>
+          <include name="initialization"/>
+          <include name="negativeSignInFunctionalityTestClickingButton" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- testNGbasics.DataDrivenFromDifferentClass -->
+      <class name="testNGbasics.UsingAnnotationsAndKeywords">
+        <methods>
+          <include name="tearDown"/>
+          <include name="backToHomePage"/>
+          <include name="initialization"/>
+          <include name="positiveMenuLinkFunctionalityTest"/>
+        </methods>
+      </class> <!-- testNGbasics.UsingAnnotationsAndKeywords -->
+      <class name="testNGbasics.DataDrivenTesting">
+        <methods>
+          <include name="tearDown"/>
+          <include name="backToHomePage"/>
+          <include name="initialization"/>
+          <include name="positiveMenuLinkFunctionalityTest" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- testNGbasics.DataDrivenTesting -->
+    </classes>
+  </test> <!-- Data Driven Test(failed) -->
+</suite> <!-- Failed suite [Class Suite] -->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Groups Suite">
+    <test thread-count="5" name="Smoke Test">
+		<!-- groups execution-->
+    <groups>
+		<run>
+			<include name="Smoke Test"/>
+		</run>
+		</groups>
+		<classes>
+      <class name="testNGbasics.DataDrivenTesting"/>
+      <class name="testNGbasics.UsingAnnotationsAndKeywords"/>
+		</classes>
+  </test> <!-- Test -->
+ <test thread-count="5" name="End to End Test">
+	 <!-- group execution-->
+	 <groups>
+		 <run>
+			 <include name="E2E Test"/>
+		 </run>
+	 </groups>
+	 <classes>
+		 <class name="testNGbasics.DataDrivenTesting"/>
+		 <class name="testNGbasics.UsingAnnotationsAndKeywords"/>
+	 </classes>
+ </test><!-- Test-->
+	 
+</suite> <!-- Suite -->
+ 

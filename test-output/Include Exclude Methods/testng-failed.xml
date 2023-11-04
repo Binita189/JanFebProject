@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Include Exclude Methods]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Search Functionality Smoke Test(failed)">
+    <classes>
+      <class name="testNGbasics.DataDrivenFromDifferentClass">
+        <methods>
+          <include name="negativeSignInFunctionalityTestHittingEnterKey" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+          <include name="backToHomePage"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- testNGbasics.DataDrivenFromDifferentClass -->
+    </classes>
+  </test> <!-- Search Functionality Smoke Test(failed) -->
+</suite> <!-- Failed suite [Include Exclude Methods] -->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Class Suite">
+  <test thread-count="5" name="Data Driven Test">
+    <classes>
+      <class name="testNGbasics.DataDrivenTesting"/>
+      <class name="testNGbasics.TestNGbasicCode"/>
+      <class name="testNGbasics.DataDrivenFromDifferentClass"/>
+      <class name="testNGbasics.Annotations"/>
+      <class name="testNGbasics.UsingAnnotationsAndKeywords"/>
+    </classes>
+  </test> <!-- Data Driven Test -->
+</suite> <!-- Class Suite -->
